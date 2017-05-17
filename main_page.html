@@ -4,7 +4,7 @@
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -15,24 +15,31 @@
 
 <body>
   <div class="container">
-    <h3>Example Page Header</h3>
+    <h1>Example Page Header</h1>
   </div>
 
   <div class = "tab">
     <a href="./main_page.html" class="tablinks"> Home </a>
     <a href="./about.html" class="tablinks"> About </a>
-    <a href="./services.html" class="tablinks"> Services </a>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="tablinks" id="dropbtn">Services</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="./services/treeser.html">Tree Services </a>
+            <a href="./services/lawn.html">Lawn Maintnance</a>
+            <a href="./services/houseser.html">Home Services </a>
+        </div>
+    </div>
     <a href="./gallery.html" class="tablinks"> Gallery </a>
     <a href="./testimonials.html" class="tablinks"> Testimonials </a>
     <a href="./contact.html" class="tablinks"> Contact </a>
   </div>
 
   <div id="Home">
-    <p>this is home </p>
-     </div>
+    <span class="category">HOME </span>
+  </div>
 
      <footer>
-      <p>For More Information or to Request an Appointment call 650.716.6092</p>
+      <h1>For More Information or to Request an Appointment Call 650.716.6092</h1><br><br>
       <span>coded and designed by Vanessa Tostado</span>
 
     </footer>
@@ -40,5 +47,9 @@
   <script src="main.js"></script>
 
 </body>
+
+
+
+
 
 </html>
