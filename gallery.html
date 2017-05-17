@@ -4,10 +4,12 @@
   <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet"  href="font-awesome.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 
     <title>Adrian's Tree Service </title>
   <link rel="stylesheet" href="main.css">
@@ -21,18 +23,45 @@
   <div class = "tab">
     <a href="./main_page.html" class="tablinks"> Home </a>
     <a href="./about.html" class="tablinks"> About </a>
-    <a href="./services.html" class="tablinks"> Services </a>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="tablinks" id="dropbtn">Services</button>
+      <div id="myDropdown" class="dropdown-content">
+            <a href="./services/treeser.html">Tree Services </a>
+            <a href="./services/lawn.html">Lawn Maintnance</a>
+            <a href="./services/houseser.html">Home Services </a>
+      </div>
+    </div>
     <a href="./gallery.html" class="tablinks"> Gallery </a>
     <a href="./testimonials.html" class="tablinks"> Testimonials </a>
     <a href="./contact.html" class="tablinks"> Contact </a>
   </div>
 
   <div id="Gallery">
-    <p>This is gallery.</p>
+      <div class="container-fluid">
+      <div class="row content">
+        <div class="col-md-8 sidenav">
+          <span class="category">Gallery</span>
+          
+          
+          
+        </div>
+        <div class="col-md-4">
+          <div class="request">
+              <span>THIS IS TO REQUEST A FORM THIS IS TO REQUEST A FORM THIS IS TO REQUEST A FORM</span>
+              <p class="pitch">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+              <button class="make_request" onclick="window.location = './contact.html'" > Request an Appointment</button>
+          </div>
+          <h1>Services</h1>
+          <button class ="services_button" onclick="window.location = './services/treeser.html'"> <i class="fa fa-tree fa-2x" aria-hidden="true"><span>Tree Services</span></i> </button>
+          <button class ="services_button" onclick="window.location = './services/lawn.html'"> <i class="fa fa-leaf fa-2x" aria-hidden="true"><span>Lawn Maintnance</span></i> </button>
+          <button class ="services_button" onclick="window.location = './services/houseser.html'"> <i class="fa fa-home fa-2x" aria-hidden="true"><span>Home Services</span></i></button>
+        </div>
+      </div>
+    </div>
   </div>
 
-     <footer>
-      <p>For More Information or to Request an Appointment call 650.716.6092</p>
+      <footer>
+      <h1>For More Information or to Request an Appointment call 650.716.6092</h1><br><br>
       <span>coded and designed by Vanessa Tostado</span>
 
     </footer>
